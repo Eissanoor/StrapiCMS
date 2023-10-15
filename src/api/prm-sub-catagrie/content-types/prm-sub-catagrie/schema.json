@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prm_sub_catagries",
+  "info": {
+    "singularName": "prm-sub-catagrie",
+    "pluralName": "prm-sub-catagries",
+    "displayName": "prmSubCatagries",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Descript": {
+      "type": "string"
+    },
+    "prm_catagry": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::prm-catagrie.prm-catagrie",
+      "inversedBy": "prm_sub_catagries"
+    }
+  }
+}
